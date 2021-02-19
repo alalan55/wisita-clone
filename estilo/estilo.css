@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.5))), url(https://images.pexels.com/photos/932320/pexels-photo-932320.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5) 100%), url(https://images.pexels.com/photos/932320/pexels-photo-932320.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+nav .logo img {
+  width: 300px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+nav .btn-login button {
+  background: none;
+  padding: 15px 20px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+
+nav .btn-login button:hover {
+  background: #6495ED;
+  color: white;
+  border: none;
+}
+
+main .conteudo-main {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 1000px;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .conteudo-main .textos-main {
+  margin: 15px 0;
+  color: #fff;
+}
+
+main .conteudo-main .textos-main h2 {
+  margin-bottom: 5px;
+  font-weight: 400;
+  font-size: 2.5rem;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+main .conteudo-main .textos-main span {
+  font-weight: 100;
+  font-size: 1.5rem;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+main .conteudo-main .inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 750px;
+  margin: 0 auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1.5%;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+main .conteudo-main .inputs input {
+  padding: 25px 150px 25px 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: none;
+}
+
+main .conteudo-main .inputs input:focus {
+  border: none;
+  -webkit-box-shadow: 0 0 0 0;
+          box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+main .conteudo-main .inputs textarea {
+  margin-top: 10px;
+  max-width: 100%;
+  min-width: 100%;
+  border-radius: 10px;
+  border: none;
+  max-height: 90px;
+}
+
+main .conteudo-main .inputs textarea:focus {
+  -webkit-box-shadow: 0 0 0 0;
+          box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+main .conteudo-main .inputs .btn-criar-conta {
+  max-width: 100%;
+  min-width: 100%;
+  padding: 15px;
+  background-color: #3769CC;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+main .conteudo-main .inputs .btn-criar-conta:hover {
+  background-color: #4169E1;
+}
+
+@media screen and (max-width: 716px) {
+  nav .logo img {
+    width: 190px;
+  }
+  .conteudo-main .textos-main {
+    font-size: 10px;
+  }
+  .conteudo-main .textos-main h2 {
+    margin-bottom: 5px;
+    font-size: 1.5rem !important;
+  }
+  .conteudo-main .textos-main span {
+    font-weight: 100;
+    font-size: 0.9rem !important;
+  }
+  .conteudo-main .inputs {
+    max-width: 900px;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .conteudo-main .inputs input {
+    padding: 20px 35px   !important;
+    margin: 10px 25px  !important;
+  }
+  .conteudo-main .inputs textarea {
+    border-radius: 10px;
+    border: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .inputs {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .inputs input {
+    padding: 20px 35px   !important;
+    width: 100% !important;
+  }
+}
+/*# sourceMappingURL=estilo.css.map */
